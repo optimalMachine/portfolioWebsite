@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Below code is custom code. */
+:root {
+	--ff-primary: 'Source Sans Pro', sans-serif;
+	--ff-secondary: 'Source Code Pro', monospace;
+
+	--fw-reg: 300;
+	--fw-bold: 900;
+
+	--clr-light: #f2f2f2;
+	--clr-mid-dark: #8c8c8c;
+	--clr-dark: #303030;
+	--clr-accent-blue: #16e0bd;
+	--clr-accent-green: #9dbf69;
+
+	--fs-h1: 3rem;
+	--fs-h2: 2.25rem;
+	--fs-h3: 1.25rem;
+	--fs-body: 1rem;
+}
+
+@media (min-width: 800px) {
+	:root {
+		--fs-h1: 4.5;
+		--fs-h2: 3.75rem;
+		--fs-h3: 1.5rem;
+		--fs-body: 1.125rem;
+	}
+}
+
+/* Design */
+
+body {
+	background: var(--clr-light);
+	color: var(--clr-dark);
+	margin: 0;
+	font-family: var(--ff-primary);
+	font-size: var(--fs-body);
+	line-height: 1.6;
+}

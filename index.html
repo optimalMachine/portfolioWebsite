@@ -7,12 +7,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" 
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
+        
+        <!--google fonts source-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" 
+        rel="stylesheet">
 
+        <link rel="stylesheet" href="css/style.css">
 
     </head>
     <body>
         <header>
-            <div class='logo'>
+            <div class="logo">
                 <h5>optimal machine</h5>
             </div>
             <button class='nav-toggle' aria-label='toggle navigation'>
@@ -21,13 +26,127 @@
             </button>
             <nav class='nav'>
                 <ul class='nav__list'>
-                    <li class='nav__item'><a href='#' class='nav__link'>home</a></li>
-                    <li class='nav__item'><a href='#' class='nav__link'>my services</a></li>
-                    <li class='nav__item'><a href='#' class='nav__link'>about me</a></li>
-                    <li class='nav__item'><a href='#' class='nav__link'>my work</a></li>
+                    <li class='nav__item'><a href='#home' class='nav__link'>home</a></li>
+                    <li class='nav__item'><a href='#services' class='nav__link'>my services</a></li>
+                    <li class='nav__item'><a href='#about' class='nav__link'>about me</a></li>
+                    <li class='nav__item'><a href='#work' class='nav__link'>my work</a></li>
                 </ul>
             </nav>
-
         </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hello, my name is <strong>Jiuk Choi</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Full Stack Dev.</p>
+            <img src="images/j.jpg" alt="a picture of me smiling">
+        </section>
+
+        <!-- My services-->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">My services are...</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Intuitive</h3>
+                    <p>Easy to use and easy to recognize.</p>
+                </div> 
+                <!-- / service -->
+                
+                <div class="service">
+                    <h3>Responsive</h3>
+                    <p>My design and layout work on any devices such as phones, computer screens.</p>
+                </div> 
+                <!-- / service -->
+                
+                <div class="service">
+                    <h3>Efficiency</h3>
+                    <p>My work pursues efficiency of production.
+                </div> 
+                <!-- / service -->
+            <a href="#work" class="btn">My Work</a>
+        </section><!-- /services -->
+
+        <!--About me-->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about"></p>
+           
+           <div class="about-me__body">
+               <p>I am a Full-Stack Developer</p>
+               <p>I have passion towards Web Development and Data Science.</p>
+           </div>
+           
+           <img src="images/j_octocat.png" alt="my github avatar">
+        </section>
+
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title">My work</h2>
+            <p class="section__subtitle"></p>
+            
+            <div class="portfolio">
+                <!-- Portfolio item 01 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/portfolio-01.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 02 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/portfolio-02.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 03 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/portfolio-03.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 04 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/portfolio-04.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 05 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/portfolio-05.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 06 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/portfolio-06.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 07 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/portfolio-07.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 08 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/portfolio-08.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 09 -->
+                <a href="#" class="portfolio__item">
+                    <img src="images/portfolio-09.jpg" alt="" class="portfolio__img">
+                </a>
+                
+                <!-- Portfolio item 0 0-->
+                <a href="#" class="portfolio__item">
+                    <img src="images/portfolio-10.jpg" alt="" class="portfolio__img">
+                </a>
+        </section>
+
+        <!-- footer -->
+        <footer>
+            <a href="mailto:jiukchoi@cjuartintelligence.com" class="footer-link">jiukchoi@cjuartintelligence.com</a>
+            <ul class="social-list">
+                <li class="social-list__item"><a class="social-list__link" href="https://linkedin.com">a</a></li>
+                <li class="social-list__item"><a class="social-list__link" href="http://dribbble.com">b</a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://twitter.com">c</a></li>
+                <li class="social-list__item"><a class="social-list__link" href="https://github.com">d</a></li>
+            </ul>
+        </footer>
+
     </body>
 </html>
