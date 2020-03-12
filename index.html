@@ -14,12 +14,19 @@
 
         <link rel="stylesheet" href="css/style.css">
 
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160363275-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-160363275-1');
+        </script>
+
     </head>
     <body>
         <header>
-            <div class="logo">
-                <h5>optimal machine</h5>
-            </div>
             <button class='nav-toggle' aria-label='toggle navigation'>
                 <span class='hamburger'>
                 </span>
@@ -39,8 +46,8 @@
             <h1 class="section__title section__title--intro">
                 Hello, my name is <strong>Jiuk Choi</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Full Stack Dev.</p>
-            <img src="images/j.jpg" alt="a picture of me smiling">
+            <p class="section__subtitle section__subtitle--intro">Full Stack Developer</p>
+            <img class="intro__img" src="images/j.jpg" alt="a picture of me smiling">
         </section>
 
         <!-- My services-->
@@ -55,14 +62,15 @@
                 
                 <div class="service">
                     <h3>Responsive</h3>
-                    <p>My design and layout work on any devices such as phones, computer screens.</p>
+                    <p>My design and layout work on any devices.</p>
                 </div> 
                 <!-- / service -->
                 
                 <div class="service">
-                    <h3>Efficiency</h3>
+                    <h3>Efficient</h3>
                     <p>My work pursues efficiency of production.
                 </div> 
+            </div>
                 <!-- / service -->
             <a href="#work" class="btn">My Work</a>
         </section><!-- /services -->
@@ -70,83 +78,66 @@
         <!--About me-->
         <section class="about-me" id="about">
            <h2 class="section__title section__title--about">Who I am</h2>
-           <p class="section__subtitle section__subtitle--about"></p>
+           <p class="section__subtitle section__subtitle--about">I am a (Python & Javascript) Full-Stack Developer</p>
            
            <div class="about-me__body">
-               <p>I am a Full-Stack Developer</p>
                <p>I have passion towards Web Development and Data Science.</p>
+               <ul class='about-me__skills'>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>Django</li>
+                <li>Nodejs</li>
+                <li>React</li>
+                <li>Photoshop</li>
+               </ul>
            </div>
            
-           <img src="images/j_octocat.png" alt="my github avatar">
+           <img class="about-me__img" src="images/j_octocat.png" alt="my github avatar">
         </section>
 
         <!-- My Work -->
         <section class="my-work" id="work">
-            <h2 class="section__title">My work</h2>
-            <p class="section__subtitle"></p>
+            <h2 class="section__title section__title--work">My work</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of my range of work (Will be more soon / later...)</p>
             
             <div class="portfolio">
                 <!-- Portfolio item 01 -->
-                <a href="#" class="portfolio__item">
-                    <img src="images/portfolio-01.jpg" alt="" class="portfolio__img">
+                <!--PYthon web scraping project-->
+                <a href="https://github.com/optimalMachine/python-job-scraper" class="portfolio__item" target="_blank">
+                    <img src="images/portfolio-01.jpg" alt="Python Web Scraping Project" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 02 -->
-                <a href="#" class="portfolio__item">
-                    <img src="images/portfolio-02.jpg" alt="" class="portfolio__img">
+                <!-- A customer management system-->
+                <a href="https://github.com/optimalMachine/management" class="portfolio__item" target="_blank">
+                    <img src="images/portfolio-02.jpg" alt="Javascript Full Stack project" class="portfolio__img">
                 </a>
                 
                 <!-- Portfolio item 03 -->
-                <a href="#" class="portfolio__item">
-                    <img src="images/portfolio-03.jpg" alt="" class="portfolio__img">
+                <!--Full Stack Django project (airbnb clone)-->
+                <a href="https://github.com/optimalMachine/airbnb-clone" class="portfolio__item" target="_blank">
+                    <img src="images/portfolio-03.jpg" alt="Python Django Full Stack project" class="portfolio__img">
                 </a>
-                
-                <!-- Portfolio item 04 -->
-                <a href="#" class="portfolio__item">
-                    <img src="images/portfolio-04.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 05 -->
-                <a href="#" class="portfolio__item">
-                    <img src="images/portfolio-05.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 06 -->
-                <a href="#" class="portfolio__item">
-                    <img src="images/portfolio-06.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 07 -->
-                <a href="#" class="portfolio__item">
-                    <img src="images/portfolio-07.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 08 -->
-                <a href="#" class="portfolio__item">
-                    <img src="images/portfolio-08.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 09 -->
-                <a href="#" class="portfolio__item">
-                    <img src="images/portfolio-09.jpg" alt="" class="portfolio__img">
-                </a>
-                
-                <!-- Portfolio item 0 0-->
-                <a href="#" class="portfolio__item">
-                    <img src="images/portfolio-10.jpg" alt="" class="portfolio__img">
-                </a>
+
+            
         </section>
 
         <!-- footer -->
-        <footer>
-            <a href="mailto:jiukchoi@cjuartintelligence.com" class="footer-link">jiukchoi@cjuartintelligence.com</a>
+        <footer class='footer'>
+            <a href="mailto:jiukchoi@cjuartintelligence.com" class="footer__link" target='_blank'>jiukchoi@cjuartintelligence.com</a>
             <ul class="social-list">
-                <li class="social-list__item"><a class="social-list__link" href="https://linkedin.com">a</a></li>
-                <li class="social-list__item"><a class="social-list__link" href="http://dribbble.com">b</a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://twitter.com">c</a></li>
-                <li class="social-list__item"><a class="social-list__link" href="https://github.com">d</a></li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/jiuk-choi-3b1972167/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/optimalMachine" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
             </ul>
         </footer>
+
+        <script src="./js/index.js"></script>
 
     </body>
 </html>
